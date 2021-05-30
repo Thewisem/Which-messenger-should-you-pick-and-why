@@ -13,6 +13,12 @@ An audit is a security cehck done by third party to see whether the code is secu
 
 
 ## Why people say to pick open source apps over closed source apps for messaging?
+It is a matter of trust. Open source apps are more trustworthy than closed source as everyone can see the code behind it. Yeah, since you can technically see the code, you don't need trust. The code will speak for itself. So they can't do anything malicious since everyone will see the code and find out. Closed source is based on trust from the developers that they won't add anything malicious. And security audits from an independent theird party to the open source code will further that trust.
+
+
+## The different types of messaging
+
+### SMS
 
 
 
