@@ -1,4 +1,4 @@
-# Which-messanger-should-you-pick-and-why
+# Which messanger should you pick and why
 Many people have asked this question but have never gave a proper documentation on it. People tell you to choose this or choose that and it's not well documented. So today I am gonna try to document each messenger, why you should pick them and the threat model associated. Along with each how private they are, 
 
 ## Why is open source so wanted and why your privacy friends recommend you use open source application.
@@ -19,7 +19,42 @@ It is a matter of trust. Open source apps are more trustworthy than closed sourc
 ## The different types of messaging
 
 ### SMS
+This is connected to your phone and is the most insecure form of communication. It is connected directly to your phone number and your SMS provider can see this. It is stored as plain text on their server and is very insecure. A malicious party could easily take advantage of this and it could potentially leak all of your SMSs. DO NOT CONTACT ANYONE THIS WAY UNLESS YOU NEED TO.
 
+### End to End encryption (What it is?)
+
+This is a very secure and private way of communication. What this does is basically in simple terms is, Imagine your X and your girlfriend is Y. First your message gets encrypted by a public key available to the server so that it could decrypt and send to Y. But then the question arises, but how is it end to end encrypted if a server can see this? Thid is the amazing part. The end to end part comes here. Along with a public key, your message also gets encrypted by a private key which is only available between you and Y. The server doesn't know the private key and can only decrypt half and send. and that is all it is required to. Your Y's phone will decrypt the rest. So no server and no MITM (Man In The Middle) can see your messages. Not even the FBI or CIA can see those messages
+
+
+### End to End Encryption (the problem)
+
+Even though the contents of your message is secure, your not completely anonymous. First of all, whatsapp, Signal and Telegram also. You are not anonymous. There is a thing called metadata. It is essentially a trail of the occurence of the exchange. Think of it like this. Your calls are end to end encrypted. You called your mother at 3 am. Then you called a suicide association near the tower at 4am. Then you called the police at 5am. I might not know what was the contents of your messages, but  can guess that. I know you called these people at these different times and where you were at the time. So I can roughly estimate what you wanted to say and do. So I can catch you that way.
+
+
+Video based on this, click [here](https://www.youtube.com/watch?v=jkV1KEJGKRA)
+
+
+### End to End Encrypted (Telegram style)
+ooooohhhhh, this one is an interesting case. End to End encryption. More like half assed work. This is by no means end to end encryption as the server has all your keys and can decrypt your messages anytime. It can defend against MITM attacks. But really though, it can decrypted on the server side. And thw worst of all, Not all telegram is end to end encrypted.
+
+
+### End to End Encrypted (Signal Style) (Whatsapp use this and many e2e encrypted use the Signal way(aka the Signal protocol))
+This is the true end to end encrypted. These guys pioneered the new wave of e2e encrypted apps. And they are truly end to end encrypted and no one except the parties involved can see the messages. True end to end encryption.
+
+### IRC or Slack
+This is an old messaging type. It isn't encrypted and MITM attack is possible. Not many people use it these days. But in the earlier days on the internet, this was used a lot. So no problem of encountering this these days.
+
+This is similar to SMS. But there is not much identification like SMS. You can put a throwaway account on IRC.
+
+### TLS (Dischord uses this)
+
+TLS (Transport Layer Security) is a protocol that is meant for website encryption but is also used for chats. This has vulnerabilities and have been successfully MITM before. Also the server has all logs of your picture and videos and everything. Email,IP address, your contacts etc. This is not meant for private communication. TLS is good in a sense that it is faster than E2E. And requires less workload. But it isn't good. And dischord is very sceptible to phishing links. Even if you delete your account, your messages will still be there on the server. Please be careful when using this. Do not click on suspicious links and download suspicious files.
+
+### End to End Encrypted (Session style)
+
+This is similar to Signal. But it is geared towards working on the Loki Network. And due to some perks in session, is more anonymous than Signal.
+
+## Video Encryption
 
 
 ## Here is a list of free of messaging platform
