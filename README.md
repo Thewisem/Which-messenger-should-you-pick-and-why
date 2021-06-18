@@ -3,13 +3,13 @@ Many people have asked this question but have never gave a proper documentation 
 
 ## Why is open source so wanted and why your privacy friends recommend you use open source application.
 
-Jus as the title says, Many privacy people will tell you to pick open source apps. What is open source? It is when the code of the app is shown to the public when it is posted on server available to access via thr internet. Some website host the code of open source projects like github,GitLab,Codeberg etc. Of cource some times people make their own git server. Basically you can see the code of the project if you google search it.
+Just as the title says, Many privacy people will tell you to pick open source apps. What is open source? It is when the code of the app is shown to the public when it is posted on server available to access via the internet. Some website host the code of open source projects like github,GitLab,Codeberg etc. Of cource some times people make their own git server. Basically you can see the code of the project if you google search it.
 
 ## The common misconception of open source between the common people
-People think that when an app is open source, it is sceptible to hackers more. This is wrong. Open source means ths app can be seen by everyone and when people find bugs, they help in fixing it by contributing to the project. So it is secure by design. And close sourcing isn't gonna make an app more secure. This is the case with windows. Even though it is closed source, it is not secure at all and is sceptible to malware. And one more misconception, Open source apps are not always secure. Think aout it, thousands of open source projects are there and many more are being made. who in their right mind has the timr to check the source code of each application. Or a large project like linux, How will you find a way to check the source code of the whole kernel. No matter how you see it, its extremely difficult. So no, open source apps are not always secure.
+People think that when an app is open source, it is sceptible to hackers more. This is wrong. Open source means ths app can be seen by everyone and when people find bugs, they help in fixing it by contributing to the project. So it is secure by design. And close sourcing isn't gonna make an app more secure. This is the case with windows. Even though it is closed source, it is not secure at all and is sceptible to malware. And one more misconception, Open source apps are not always secure. Think about it, thousands of open source projects are there and many more are being made. who in their right mind has the time to check the source code of each application. Or a large project like linux, How will you find a way to check the source code of the whole kernel. No matter how you see it, its extremely difficult. So no, open source apps are not always secure.
 
 ## What are security audits and why should I care when an open source app gets audited?
-An audit is a security cehck done by third party to see whether the code is secure and not having bugs or major flaws. It helps in identifying issues in the code and also tells us normal people how secure the code is. It is like your buddy that checks the source code and tells you that you can use the app and say its secure.
+An audit is a security check done by third party to see whether the code is secure and not having bugs or major flaws. It helps in identifying issues in the code and also tells us normal people how secure the code is. It is like your buddy that checks the source code and tells you that you can use the app and say its secure.
 
 
 ## Why people say to pick open source apps over closed source apps for messaging?
@@ -46,9 +46,9 @@ This is an old messaging type. It isn't encrypted and MITM attack is possible. N
 
 This is similar to SMS. But there is not much identification like SMS. You can put a throwaway account on IRC.
 
-### TLS (Dischord uses this)
+### TLS (Discord uses this)
 
-TLS (Transport Layer Security) is a protocol that is meant for website encryption but is also used for chats. This has vulnerabilities and have been successfully MITM before. Also the server has all logs of your picture and videos and everything. Email,IP address, your contacts etc. This is not meant for private communication. TLS is good in a sense that it is faster than E2E. And requires less workload. But it isn't good. And dischord is very sceptible to phishing links. Even if you delete your account, your messages will still be there on the server. Please be careful when using this. Do not click on suspicious links and download suspicious files.
+TLS (Transport Layer Security) is a protocol that is meant for website encryption but is also used for chats. This has vulnerabilities and have been successfully MITM before. Also the server has all logs of your picture and videos and everything. Email,IP address, your contacts etc. This is not meant for private communication. TLS is good in a sense that it is faster than E2E. And requires less workload. But it isn't good in terms of privacy. And dischord is very sceptible to phishing links. Even if you delete your account, your messages will still be there on the server. Please be careful when using this. Do not click on suspicious links and download suspicious files.
 
 ### End to End Encrypted (Session style)
 
@@ -87,7 +87,7 @@ https://blog.cryptographyengineering.com/2012/11/24/lets-talk-about-zrtp/
 I would be scratching my head at evrything. I just gave a simple overview. If anyone wanted more,read the blog. Many of this is paraphrasing the blog.
 
 
-### WebRTC(Dischord)
+### WebRTC(Discord)
 
 This is not hidden as per say. It isn't end to end encrypted. It decrypts on the server side before it goes to the recipient. So your calls can be tracked on the server you use. So this isn't good and is not recommended for private calls
 
@@ -102,11 +102,11 @@ They are using GCM with the encryption keys with the users only. Just like end t
 
 ### Whatsapp (Not recommended at all)
 
-I CANNOT STATE THIS ENOUGH. DO NOT USE WHATSAPP. IT IS OWNED BY FACEBOOK WHICH IS BASED AROUND USER DATA. But aside from that, it is end to end encrypted. Uses the same encryption as signal for its calls and messages and is overall an okay platform. The policy changes should make you rethink your decision to pick it though. This is a closed source app meaning we have to take their word for everthing they say.There is a downside being that whatsapp requires phone numbers which can be traced baxk to you. So it isn't private as per say the contents of the conversation won't be known. But it can be traced back to you using metadata.
+I CANNOT STATE THIS ENOUGH. DO NOT USE WHATSAPP. IT IS OWNED BY FACEBOOK WHICH IS BASED AROUND USER DATA. But aside from that, it is end to end encrypted. Uses the same encryption as signal for its calls and messages and is overall an okay platform. The policy changes should make you rethink your decision to pick it though. This is a closed source app meaning we have to take their word for everthing they say.There is a downside being that whatsapp requires phone numbers which can be traced back to you. So it isn't private as per say the contents of the conversation won't be known. But it can be traced back to you using metadata.
 
 ### Signal (Reccomended alternative to Whatsapp)
 
-Signal is he industry standard when it comes to encryption. This is almost as good as whatsapp and has more secure features like verification of contacts using qr codes. Their calls and messages are end to end encrypted and their bussiness model relies on donations. They are open source and have been audited on multiple locations. Many people reccomend this. The only downside being that this and whatsapp requires phone numbers which can be traced baxk to you. So its privacy levels are okay.
+Signal is he industry standard when it comes to encryption. This is almost as good as whatsapp and has more secure features like verification of contacts using qr codes. Their calls and messages are end to end encrypted and their bussiness model relies on donations. They are open source and have been audited on multiple locations. Many people reccomend this. The only downside being that this and whatsapp requires phone numbers which can be traced back to you. So its privacy levels are okay.
 So it isn't private as per say the contents of the conversation won't be known. But it can be traced back to you using metadata.
 
 ### Telegram (Never EVER EVER EVER USE THIS)
@@ -121,7 +121,7 @@ Session is one of the best mix for ease of use and privacy. It doesn't require p
 
 ### Briar
 
-This is the most secure and private messaging on android. This can never be traced back. This is also one of the least daily driver friendly messager on this list. It is P2P and can work without internet. It connects to the tor network when it does require internet. Two parties need to be on site together to connect each other. Plus this is arguably one of the most abttery draining apps on your phone. It keeps on running in the background. The messages are non recoverable. They can never be recovered if yolosue the phone. So you can kiss message recovery goodbye. This requires no phone number or accounts and only works on android.
+This is the most secure and private messaging on android. This can never be traced back. This is also one of the least daily driver friendly messager on this list. It is P2P and can work without internet. It connects to the tor network when it does require internet. Two parties need to be on site together to connect each other. Plus this is arguably one of the most battery draining apps on your phone. It keeps on running in the background. The messages are non recoverable. They can never be recovered if you lose the phone. So you can kiss message recovery goodbye. This requires no phone number or accounts and only works on android.
 
 ### Dischord (Not reccomended for private conversation)
 
@@ -129,12 +129,12 @@ Dischord is an amazing app for gamers and many people alike. Their call features
 
 ### Matrix (Element)
 
-This is a secure messaging platform. Its security by obscurity. There is no single server in matrix. You can set up your own server for you and your friends. So the metadat issue is resolved by the fact that you are the owner of your own server and your own account. But you can join other servers as well. This js a pro and a con. The pro is that if a server is down, you and your friends can join another server and chat there. End to end encryption depends on the client. Element supports end to end encryption. The good thing about matrix is there is more than a single client for accessing matrix on multiple operating systems. The con is that it is hard to set up a matrix account. You have to find the server you want snd join that server. There is a main server for matrix which is highly not reccomneded. It is slow and Janky as heck due to having too many people.
-Matrix requires no phone number or account to sign up
+This is a secure messaging platform. Its security by obscurity. There is no single server in matrix. You can set up your own server for you and your friends. So the metadata issue is resolved by the fact that you are the owner of your own server and your own account. But you can join other servers as well. This js a pro and a con. The pro is that if a server is down, you and your friends can join another server and chat there. End to end encryption depends on the client. Element supports end to end encryption. The good thing about matrix is there is more than a single client for accessing matrix on multiple operating systems. The con is that it is hard to set up a matrix account. You have to find the server you want snd join that server. There is a main server for matrix which is highly not reccomneded. It is slow and Janky as heck due to having too many people.
+Matrix requires no phone number or account to sign up.
 
 ### XMPP (Converaations)
 
-This is similar to matrix. You can set up your own server and your own conversations with your account and your friends. Or pick a free or premium server option on this platform. XMPP is cross platform and has multiple clients. Conversation is one of the best on android. Chdck your server whether it supports end to end encrypted. So that you can use that.
+This is similar to matrix. You can set up your own server and your own conversations with your account and your friends. Or pick a free or premium server option on this platform. XMPP is cross platform and has multiple clients. Conversation is one of the best on android. Check your server whether it supports end to end encrypted. So that you can use that.
 
 
 ## My pick of foss apps and its use cases
