@@ -36,7 +36,7 @@ Also, it's not that hard to spoof numbers and intercept other people's texts. Un
 
 ### End to End encryption (What it is?)
 
-This is a very secure and private way of communication. What this does is basically in simple terms is, Imagine your X and your girlfriend is Y. First your message gets encrypted by a public key available to the server so that it could decrypt and send to Y. But then the question arises, but how is it end to end encrypted if a server can see this? Thid is the amazing part. The end to end part comes here. Along with a public key, your message also gets encrypted by a private key which is only available between you and Y. The server doesn't know the private key and can only decrypt half and send. and that is all it is required to. Your Y's phone will decrypt the rest. So no server and no MITM (Man In The Middle) can see your messages. Not even the FBI or CIA can see those messages
+This is a very secure and private way of communication. What this does is basically in simple terms is, Imagine your X and your girlfriend is Y. First your message gets encrypted by a private key which is not aent anywhere. Then the interesting part about this end to end encryption comes in. Then there is a public key which encrypts with the private key and it is sent to the server using TLS. The server sents that private key to Y and her phone decrypts it with the public key she got then eith the privste key you both secretly share. This is how the first exchange is done. But there is more things which makes this waay harder and more pointless to crack. After this exchange, there is a shared key that is shared between the two parties through the server each time they start a session. These keys change after a few rounds of messages. So even if they were able to obtain this key, they would have access to some messages and not all of them.
 
 
 ### End to End Encryption (the problem)
@@ -164,3 +164,9 @@ This is similar to matrix. You can set up your own server and your own conversat
 
 
 Pick your favourite app and hopfully you have what you need. I am out. PEACE.
+
+
+## Contributions
+
+1) Me, aka, Wisem. Did all of the work.
+2) Wizzwizz4 at fosstodon, he helped in the sms problem and fixed some mistakes I made in end to end encryption.
