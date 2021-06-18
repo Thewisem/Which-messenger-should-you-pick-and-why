@@ -21,6 +21,19 @@ It is a matter of trust. Open source apps are more trustworthy than closed sourc
 ### SMS
 This is connected to your phone and is the most insecure form of communication. It is connected directly to your phone number and your SMS provider can see this. It is stored as plain text on their server and is very insecure. A malicious party could easily take advantage of this and it could potentially leak all of your SMSs. DO NOT CONTACT ANYONE THIS WAY UNLESS YOU NEED TO.
 
+### SMS Issues ( Thanks @wizzwiz4 from fosstodon for telling me this)
+
+> [[SMS] is stored as plain text on their server.] This is his response from my above statement.
+
+We have no way of knowing whether this is true, and it's not why SMS is insecure. SMS is always encrypted in transit, but not strongly; an attacker can downgrade the encryption to a “64-bit” key (actually 40-bit because of US government export restrictions, and the ensuing shenanigans) which is easy to brute-force.
+
+Its right that it's best to *assume* it's stored in plain-text, though. It definitely has been in the past – and if it's stored encrypted (which I'd expect for more modern systems), they have the encryption keys.
+
+That's not the main issue with SMS, though. The main issue is spoofing. Telecoms systems are designed with the assumption that everyone on the telecoms side of the telecoms network is fully trustworthy – but that's not the case at all. Given how many dubious organisations have authorised access to the innards of the telecoms system, a text can be sent *from* any number you like. If you receive a text, you have no real certainty that it's from who it says it's from.
+
+Also, it's not that hard to spoof numbers and intercept other people's texts. Unlike everything he's mentioned so far, this is illegal – but it still happens (Unfortunately, SMS is used for authentication.)
+
+
 ### End to End encryption (What it is?)
 
 This is a very secure and private way of communication. What this does is basically in simple terms is, Imagine your X and your girlfriend is Y. First your message gets encrypted by a public key available to the server so that it could decrypt and send to Y. But then the question arises, but how is it end to end encrypted if a server can see this? Thid is the amazing part. The end to end part comes here. Along with a public key, your message also gets encrypted by a private key which is only available between you and Y. The server doesn't know the private key and can only decrypt half and send. and that is all it is required to. Your Y's phone will decrypt the rest. So no server and no MITM (Man In The Middle) can see your messages. Not even the FBI or CIA can see those messages
